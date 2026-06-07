@@ -1001,10 +1001,11 @@
             border-radius: 10px;
         }
         .gallery-card {
-            flex: 0 0 280px;
-            min-height: 260px;
-            border-radius: var(--border-radius);
-            scroll-snap-align: start;
+            flex: 0 0 220px;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            scroll-snap-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1021,9 +1022,10 @@
             height: 100%;
             object-fit: cover;
             display: block;
+            border-radius: 50%;
         }
         .gallery-card:hover {
-            transform: scale(1.03);
+            transform: scale(1.05);
             box-shadow: var(--shadow-lift);
         }
         .gallery-card:nth-child(1) {
@@ -1242,7 +1244,9 @@
                 padding: 18px 16px;
             }
             .gallery-card {
-                min-width: 72vw;
+                min-width: 180px;
+                width: 180px;
+                height: 180px;
             }
             .venue-features {
                 flex-direction: column;
